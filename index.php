@@ -36,6 +36,7 @@ $faqs = [
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Faq</title>
 </head>
 <style>
@@ -74,21 +75,30 @@ $faqs = [
   }
 
   header {
-    margin: 0 20px;
+    padding: 0 20px;
     max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
   }
-
+  .privacy{
+    font-size: 22px;
+    color: grey;
+  }
   ul {
     width: 100%;
     padding-bottom: 20px;
     border-bottom: 1px solid grey;
+  }
+
+  .menu {
+    padding: 0 20px;
   }
 
   .menu ul {
@@ -102,32 +112,64 @@ $faqs = [
   ul li a {
     color: grey;
   }
-  a:hover{
+
+  a:hover {
     color: blue;
   }
+
   .active {
     color: #3367d6;
     padding-bottom: 19px;
     border-bottom: 3px solid #3367d6;
   }
+
+  .profilo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .profilo i {
+    color: grey;
+  }
+
+  .profilo img {
+    border-radius: 50%;
+  }
+
+  .profilo i {
+    font-size: 25px;
+  }
 </style>
 
 <body>
   <header>
-    <div class="logo">
-      <img width="100" src="https://www.neide.it/wp-content/uploads/2018/09/google-o-gogol.jpg" alt="">
-      <span>Privacy e termini</span>
+    <div>
+      <div class="logo">
+        <img width="100" src="https://www.neide.it/wp-content/uploads/2018/09/google-o-gogol.jpg" alt="">
+        <div class="privacy">Privacy e termini</div>
+      </div>
+
     </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">Introduzione</a></li>
-        <li><a href="#">Norme sulla privacy</a></li>
-        <li><a href="#">Termini di servizio</a></li>
-        <li><a href="#">Tecnologie</a></li>
-        <li"><a class="active" href=" #">Domande frequenti</a></li>
-      </ul>
+    <div class="profilo">
+      <div>
+        <i class="fas fa-th"></i>
+      </div>
+      <div>
+        <img width="50" src="https://i.picsum.photos/id/816/50/50.jpg?hmac=kqLFsPlkf9L6OJY9vET4kyHFHKVAe6mXvpzHgLWAD18" alt="">
+      </div>
     </div>
+
   </header>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Introduzione</a></li>
+      <li><a href="#">Norme sulla privacy</a></li>
+      <li><a href="#">Termini di servizio</a></li>
+      <li><a href="#">Tecnologie</a></li>
+      <li"><a class="active" href=" #">Domande frequenti</a></li>
+    </ul>
+  </div>
   <div class="container">
     <?php
     foreach ($faqs as $value) {
