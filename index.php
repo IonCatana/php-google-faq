@@ -31,8 +31,39 @@ $faqs = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faq</title>
 </head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  h2{
+    padding-top: 60px;
+  }
+  p{
+    padding-top: 20px;
+  }
+
+</style>
 
 <body>
+  <div class="container">
+    <?php
+    foreach ($faqs as $key => $faq) {
+      $question = $faq['domanda'];
+      $answer = $faq['risposta'];
+    ?>
+      <h2><?php echo $question; ?></h2>
+      <p><?php echo $answer; ?></p>
+    <?php
+    }
+    ?>
+  </div>
 
 </body>
 
