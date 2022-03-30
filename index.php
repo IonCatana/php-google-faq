@@ -170,7 +170,7 @@ $faqs = [
       <li><a href="#">Norme sulla privacy</a></li>
       <li><a href="#">Termini di servizio</a></li>
       <li><a href="#">Tecnologie</a></li>
-      <li"><a class="active" href=" #">Domande frequenti</a></li>
+      <li><a class="active" href="#">Domande frequenti</a></li>
     </ul>
   </div>
   <div class="container">
