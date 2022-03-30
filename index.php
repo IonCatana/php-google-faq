@@ -38,109 +38,112 @@ $faqs = [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Faq</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    h2 {
+      padding-top: 60px;
+      line-height: 32px;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    p {
+      line-height: 25px;
+      margin: 10px 0;
+      font-size: 14px;
+      padding-top: 20px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    header {
+      padding: 0 20px;
+      max-width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .privacy {
+      font-size: 22px;
+      color: grey;
+    }
+
+    ul {
+      width: 100%;
+      padding-bottom: 20px;
+      border-bottom: 1px solid grey;
+    }
+
+    .menu {
+      padding: 0 20px;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    ul li a {
+      color: grey;
+    }
+
+    a:hover {
+      color: blue;
+    }
+
+    .active {
+      color: #3367d6;
+      padding-bottom: 19px;
+      border-bottom: 3px solid #3367d6;
+    }
+
+    .profilo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .profilo i {
+      color: grey;
+    }
+
+    .profilo img {
+      border-radius: 50%;
+    }
+
+    .profilo i {
+      font-size: 25px;
+    }
+  </style>
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
 
-  .container {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 30px;
-  }
-
-  h2 {
-    padding-top: 60px;
-    line-height: 32px;
-  }
-
-  a {
-    text-decoration: none;
-    color: blue;
-  }
-
-  p {
-    line-height: 25px;
-    margin: 10px 0;
-    font-size: 14px;
-    padding-top: 20px;
-  }
-
-  span {
-    font-size: 20px;
-  }
-
-  header {
-    padding: 0 20px;
-    max-width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .privacy{
-    font-size: 22px;
-    color: grey;
-  }
-  ul {
-    width: 100%;
-    padding-bottom: 20px;
-    border-bottom: 1px solid grey;
-  }
-
-  .menu {
-    padding: 0 20px;
-  }
-
-  .menu ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  ul li a {
-    color: grey;
-  }
-
-  a:hover {
-    color: blue;
-  }
-
-  .active {
-    color: #3367d6;
-    padding-bottom: 19px;
-    border-bottom: 3px solid #3367d6;
-  }
-
-  .profilo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .profilo i {
-    color: grey;
-  }
-
-  .profilo img {
-    border-radius: 50%;
-  }
-
-  .profilo i {
-    font-size: 25px;
-  }
-</style>
 
 <body>
   <header>
